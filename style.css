@@ -1,0 +1,103 @@
+html {
+  box-sizing: border-box; /*makes a element with border go within its container */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; /*enforce the box-sizing to all elements*/
+}
+
+
+body {
+  font-family: poppins;
+  line-height: 95%;
+}
+
+
+p, li {
+  font-weight: 200;
+  font-size: 70%;
+  color: white;
+}
+
+h3 {
+  padding-top: 10px;
+}
+
+h5 {
+  
+}
+
+span {
+  position: relative;
+  display: flex;
+/*   border: 2px solid black; */
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  max-width: 400px;
+  min-width: 200px;
+  box-shadow: 3px 3px 5px 2px lightgray; /*3rd param: blur = 5px */
+/*   border: 10px solid grey; */
+  
+}
+
+.full-width-block {
+  
+}
+
+.content {
+  position: relative;
+  padding: 2% 10% 5% 10%;
+  /*   border: 2px solid red; */
+}
+
+.inline-block {
+  flex: 50%;
+/*   border: 2px solid yellow; */
+}
+
+
+button {
+/*   position:absolute; */
+  width: 100%;
+  background-color: #a0eb5e;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 5px;
+}
+
+#unit {
+  color: white;
+  font-size: 70%;
+}
+
+#amount {
+  color: white;
+}
+
+#box-1 {
+  background-color: #65ad92;
+}
+
+#box-2 {
+  background-color: #7ee6bf;
+}
+
+#closer-top {
+ position: relative;
+ top:-10px;
+}
+
+#flex-wrapper {
+  flex-wrap: wrap;   -- this is how to make boxes auto move the next row when there is no space in the current row
+}
+
+#adline {
+  color: white;
+  font-size: 60%;
+  margin-top: 10%;
+}
+
