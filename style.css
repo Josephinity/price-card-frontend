@@ -1,17 +1,21 @@
+
 html {
   box-sizing: border-box; /*makes a element with border go within its container */
 }
 
 *, *:before, *:after {
-  box-sizing: inherit; /*enforce the box-sizing to all elements*/
+  box-sizing: inherit; /*enforces the box-sizing to all elements*/
 }
-
 
 body {
   font-family: poppins;
   line-height: 95%;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
 
 p, li {
   font-weight: 200;
@@ -39,6 +43,8 @@ span {
   max-width: 400px;
   min-width: 200px;
   box-shadow: 3px 3px 5px 2px lightgray; /*3rd param: blur = 5px */
+  border-radius: 5px;
+  overflow: hidden;
 /*   border: 10px solid grey; */
   
 }
@@ -50,23 +56,25 @@ span {
 .content {
   position: relative;
   padding: 2% 10% 5% 10%;
-  /*   border: 2px solid red; */
+/*     border: 2px solid red; */
 }
 
 .inline-block {
   flex: 50%;
+  position: relative;
+  padding: 0 5% 3% 5%;
 /*   border: 2px solid yellow; */
 }
 
-
 button {
-/*   position:absolute; */
-  width: 100%;
+  position: absolute;
+  width: 80%;
   background-color: #a0eb5e;
   border: none;
   border-radius: 3px;
   color: white;
-  padding: 5px;
+  padding: 3%;
+  bottom: 10%;
 }
 
 #unit {
@@ -100,4 +108,3 @@ button {
   font-size: 60%;
   margin-top: 10%;
 }
-
